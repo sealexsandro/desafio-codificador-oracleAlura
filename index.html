@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/tela_inicial.css" />
+    <title>Encoder</title>
+  </head>
+  <body>
+    <div id="panel-front">
+      <header id="header-front">
+        <img
+          id="img-logo"
+          src="./images/criptografado.png"
+          width="45px"
+          height="45px"
+        />
+        <h1>Codificador</h1>
+      </header>
+
+      <div id="container">
+        <div id="container-elements">
+          <div id="container-buttons">
+            <button
+              class="button button-criptografar"
+              onclick="criptografar()"
+            >
+              Criptografar
+            </button>
+            <button
+              class="button button-descriptografar"
+              onclick="descriptografar()"
+            >
+              Descriptografar
+            </button>
+          </div>
+          <div class="linha-informativo">
+            <div id="aviso-erro"></div>
+            <div>
+              <div id="">
+                <!-- <img
+                  id="img-copy"
+                  src="./images/copy-writing.png"
+                  width="30px"
+                  height="30px"
+                  onclick="copyText()"
+                /> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-text">
+            <div class="box-text" id="box-insert-text">
+              <textarea
+                class="text-area"
+                name="plain-text"
+                id="insert-text"
+                cols="57"
+                rows="12"
+              ></textarea>
+            </div>
+            <div class="box-text" id="box-output-text">
+              <textarea
+                class="text-area"
+                name="changed-text"
+                id="output-text"
+                cols="57"
+                rows="12"
+                readonly
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="rodape">
+      <p>&copy; 2022 Decodificador - by Sebastião Alexsandro<br /></p>
+    </footer>
+  </body>
+
+  <script src="./js/tela_inicial.js"></script>
+</html>

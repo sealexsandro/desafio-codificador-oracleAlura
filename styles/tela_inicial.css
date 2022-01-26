@@ -1,0 +1,145 @@
+body {
+  background-color: #feffff;
+  /* width: 100%;
+    height: 100%; */
+  height: 100%;
+  /* margin-top:-32767px; */
+}
+#header-front {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0 40px 60px;
+  padding: 0;
+}
+#img-logo {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#header-front h1 {
+  margin-top: 0;
+  margin-left: 10px;
+  align-items: center;
+}
+
+#container {
+  width: auto;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#container-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 0 30px;
+}
+
+#mensagem-erro{
+  background-color: rgb(248, 48, 48);
+  font-size: 13pt;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+#container-buttons {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 14pt;
+  font-weight: bold;
+  /* transition: .5s; */
+
+  border: 1px solid rgb(53, 53, 253);;
+  border-radius: 5px;
+
+}
+
+.linha-informativo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container-text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box-text {
+}
+
+#box-insert-text {
+  margin-right: 1rem;
+}
+
+#box-output-text {
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.text-area {
+}
+
+/* footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+} */
+
+#rodape p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1065px) {
+  #container-text {
+    width: auto;
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+  }
+  #text-area{
+    width: 30%;
+  }
+  #box-insert-text {
+    width: 40%;
+    /* overflow-x: inherit; */
+  }
+  #box-output-text {
+    width: 40%;
+    overflow-x: inherit;
+  }
+}
+@media (max-width: 760px) {
+  #container-text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* #box-insert-text {
+    width: 100%;
+    overflow-x: inherit;
+  }
+  #box-output-text {
+    width: 100%;
+    overflow-x: inherit;
+  } */
+}
